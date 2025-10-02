@@ -1,0 +1,2 @@
+sudo dnf install -y nodejs
+sudo npm install -g sass
