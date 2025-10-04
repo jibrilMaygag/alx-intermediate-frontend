@@ -7,10 +7,18 @@ interface MinorCredits{
     credits:number
 
 }
-const sumMajorCredits=function(subject1:MajorCredits,subject2:MajorCredits){
-    return subject1.credits+subject2+credits
+export const sumMajorCredits=function(subject1:MajorCredits,subject2:MajorCredits){
+    return {
+        credits:subject1.credits+subject2.credits,
+    _majorBrand: "MajorCredits"}
 
 }
-const sumMinorCredits=function(subject1:MinorCredits,subject2:MinorCredits){
-    
+export const sumMinorCredits=function (
+  subject1: MinorCredits,
+  subject2: MinorCredits
+): MinorCredits {
+  return {
+    credits: subject1.credits + subject2.credits,
+    _minorBrand: "MinorCredits",
+  };
 }
